@@ -1,0 +1,19 @@
+<h1>{{name}}</h1>
+
+<dl>
+  <td>nombre: </td>
+  <dd>{{name}}</dd>
+
+  <td>edad: </td>
+  <dd>{{age}}</dd>
+
+  <td>metodo: </td>
+  <dd>{{ getHeroesDescription() }}</dd>
+
+  <td>capatilizador: </td>
+  <dd>{{ capitalizedName }}</dd>
+</dl>
+
+<button *ngIf="name !== 'spiderman'"  class="btn btn-primary mx-2" (click)="changeHeroeName()">Cambiar nombre</button>
+<button *ngIf="age !== 31" class="btn btn-primary" (click)="changeHeroeAge()">Cambiar edad</button>
+
