@@ -6,10 +6,12 @@ import {ListComponent} from "./list/list.component";
 
 @NgModule({
   declarations: [
+    // declarar nuestros componentes 
     HeroComponent,
     ListComponent
   ],
   exports: [
+    // exportar nuestros componentes
     HeroComponent,
     ListComponent
   ],
